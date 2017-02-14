@@ -1,11 +1,12 @@
 ---
-layout: about
+infos:
+- samizda，写过耽美小说。用别的身份做过游戏。
+- 有时候也写写代码。
+- 目前正在试着填完《君士坦丁之夜》，一边写一边反思。
 ---
 
-Hello, my name is Micah Cowell. I am a self proclaimed web developer who likes the internet, hip hop, and fancy yo-yos.
 
-# What do you do?
-I make website and stuff. All the code I write is on my [Github](https://github.com/getmicah).
 
-# What programming languages do you use?
-When making websites I like using Javascript and Sass. I also like Python and making linux scripts.
+
+
+

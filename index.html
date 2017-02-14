@@ -12,13 +12,21 @@ layout: default
         {% endfor %}
     </ul>
 </div>
-<div class="blog">
-    <p>
-        写作用的笔名是 samizda，写过耽美小说。用别的身份做过游戏。
-        有时候也写写代码。
 
-    </p>
+<div class="blog">
+    <ul>
+        {% assign post = site.pages[3]%}
+        {% assign content = post.content %}
+        {% for info in post.infos %}
+            <li>
+            {{ info | textilize }}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <!---->
 </div>
+
 <div class="blog">
     <h1>Blog Posts:</h1>
     <ul>
