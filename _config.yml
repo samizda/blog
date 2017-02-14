@@ -3,14 +3,17 @@ permalink: /blog/:title
 
 
 # My variables
-name: My Blog
-description: A Jekyll Theme
+name: "idelem"
+description: cool memories
 google_verification: null
-
+url: http://idelem.herokuapp.com/
 
 # File management
-include: [".htaccess"]
-exclude: ["README.md", "LICENSE"]
+
+gems: ['kramdown']
+include: [".htaccess", "_clips"]
+exclude: ["README.md", "LICENSE", 'config.ru', 'Gemfile', 'Gemfile.lock', "vendor", "bin", "Procfile"]
+
 
 
 # Sass
@@ -25,3 +28,28 @@ kramdown:
   input: GFM
   hard_wrap: false
 highlighter: rouge
+
+# Rake
+post:
+  template: _post.txt
+  extension: md
+page:
+  template: _page.txt
+  extension: md
+code:
+  template: _code.txt
+  extension: md
+editor: gvim
+git:
+  branch: master
+transfer:
+  command: rsync
+  settings: -av
+  source: _site/
+  destination: ~/Git/username.github.com/
+
+# Collections
+collections:
+  clips:
+    output: true
+    permalink: /clips/:title

@@ -3,16 +3,25 @@
 
 @import "reset";
 @import "config";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanssc.css);
 
 body {
 	color: $color-black;
 	background: $color-white;
-	font-family: 'Inconsolata', ;
+//  font-family: 'Noto Sans SC', sans-serif;
+//	font-family: 'Inconsolata', ;
+    font-family: monospace;
 	font-size: 100%;
 	font-weight: 400;
 }
 h1 {
 	margin-bottom: 5px;
+}
+h2 {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 5px;
 }
 p {
 	font-size: 1em;
@@ -26,8 +35,10 @@ a {
 	text-decoration: none;
   }
   &:hover {
-	 background-color: $color-grey;
-	 text-decoration: none;
+	color: $color-link;
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px solid $color-link;
   }
   &:active {
 	color: $color-link;
@@ -46,10 +57,11 @@ ul {
 }
 blockquote {
   color: $color-black;
-  border-left: 4px solid $color-black;
-  padding-left: 15px;
-  font-size: 18px;
-  letter-spacing: -1px;
+  //border-left: 3px solid $color-black;
+  padding-left: 0.9em;
+  padding-right: 0.9em;
+  font-size: 0.9em;
+  letter-spacing: 1px;
   font-style: italic;
 }
 
@@ -156,14 +168,14 @@ blockquote {
 			line-height: 150%;
 			margin-bottom: 15px;
 		}
-		a {
-			padding-bottom: 1px;
-			border-bottom: 1px solid $color-link;
-			&:hover {
-				background-color: $color-grey;
-				text-decoration: none;
-			}
-		}
+		//a {
+		//	padding-bottom: 1px;
+		//	border-bottom: 1px solid $color-link;
+		//	&:hover {
+		//		background-color: $color-grey;
+		//		text-decoration: none;
+		//	}
+		//}
 		strong {
 			font-weight: 700;
 		}
@@ -207,9 +219,10 @@ blockquote {
 			padding: 10px;
 			line-height: 1.5;
 			border-radius: 3px;
-			background: $color-black;
+			background: $color-white;
 			code {
-				color: $color-code;
+				//color: $color-code;
+                color: $color-link;
 				background: none;
 			}
 		}
