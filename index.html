@@ -2,6 +2,7 @@
 layout: default
 ---
 
+
 <div class="header">
     <h1>{{ site.name }}</h1>
     <ul>
@@ -14,8 +15,9 @@ layout: default
 </div>
 
 <div class="blog">
+    <!--
     <ul>
-        {% assign post = site.pages[3]%}
+        {% assign post = site.pages.me %}
         {% assign content = post.content %}
         {% for info in post.infos %}
             <li>
@@ -23,8 +25,9 @@ layout: default
             </li>
         {% endfor %}
     </ul>
-
-    <!---->
+    -->
+    {% capture content %}{% include about.md %}{% endcapture %}
+    {{ content | markdownify }}
 </div>
 
 <div class="blog">
