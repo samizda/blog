@@ -12,7 +12,7 @@ url: http://idelem.herokuapp.com/
 
 gems: ['kramdown']
 include: [".htaccess", "_clips"]
-exclude: ["README.md", "LICENSE", 'config.ru', 'Gemfile', 'Gemfile.lock', "vendor", "bin", "Procfile"]
+exclude: ["README.md", "LICENSE", 'config.ru', 'Gemfile', 'Gemfile.lock', "vendor", "bin", "Procfile","todo"]
 
 
 
