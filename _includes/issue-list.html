@@ -4,13 +4,11 @@
 	{% for issue in issues reversed %}
 		{% assign issueData = issue[1] %}
 
-		<article >
 		  <div>
 		  	<p><strong>昵称：</strong>{{ issueData.id }}</p>
 		    <p><strong>反馈：</strong>
 		      {{ issueData.message }}
 		    </p>
 		  </div>
-		</article>
 	{% endfor %}
 </div>
