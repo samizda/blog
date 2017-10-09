@@ -1,11 +1,8 @@
 # - title: forum (BETA)
 #   url: /forum
 
- - title: atelier
-   url: /atelier
+- title: atelier
+  url: /atelier
 
-# - title: '#TODO'
-#   url: /todo
-
-- title: "1982 issues"
-  url: /issues/1982
+- title: issues
+  url: /issues
