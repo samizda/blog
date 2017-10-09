@@ -1,0 +1,10 @@
+<form method="POST" action="https://api.staticman.net/v2/entry/eduardoboucas/staticman/gh-pages/comments">
+  <input name="options[redirect]" type="hidden" value="https://my-site.com">
+  <!-- e.g. "2016-01-02-this-is-a-post" -->
+  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+  <label><input name="fields[id]" type="text">昵称</label>
+  <label><input name="fields[contact]" type="email">联系方式</label>
+  <label><textarea name="fields[message]"></textarea>反馈</label>
+
+  <button type="submit">提交</button>
+</form>
