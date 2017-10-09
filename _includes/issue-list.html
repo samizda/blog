@@ -1,12 +1,10 @@
 <div class="issues">
-	{% assign reviews = site.data.issues | sort %}
-
+	{% assign issues = site.data.issues | sort %}
 	{% for issue in issues reversed %}
 		{% assign issueData = issue[1] %}
-
 		  <div>
-		  	<p><strong>昵称：</strong>{{ issueData.id }}</p>
-		    <p><strong>反馈：</strong>
+		  	<p>{{ issueData.id }}</p>
+		    <p>
 		      {{ issueData.message }}
 		    </p>
 		  </div>
