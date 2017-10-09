@@ -2,10 +2,16 @@
 	{% assign issues = site.data.issues | sort %}
 	{% for issue in issues reversed %}
 		{% assign issueData = issue[1] %}
-		  <div>
+          <hr>
+		  <div class="issues-id">
 		  	<p>{{ issueData.id }}</p>
+          </div>
+          <div class="issues-date">
+		  	<p>{{ issueData.date | date_to_string }}</p>
+          </div>
+          <div class="issues-message">
 		    <p>
-		      {{ issueData.message }}
+		      {{ issueData.message | markdownify }}
 		    </p>
 		  </div>
 	{% endfor %}

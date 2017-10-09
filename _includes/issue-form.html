@@ -4,7 +4,11 @@
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <label> 昵称 <input name="fields[id]" type="text"></label>
   <label> 联系方式 <input name="fields[contact]" type="email"></label>
-  <label> 反馈 <textarea name="fields[message]"></textarea></label>
+  <label> 
+    <div class="form-message">
+      <textarea name="fields[message]" class="form-message box"></textarea>
+    </div>
+  </label>
 
   <button type="submit">提交</button>
 </form>
