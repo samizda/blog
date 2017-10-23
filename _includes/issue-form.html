@@ -10,11 +10,11 @@
   <!-- e.g. "2016-01-02-this-is-a-post" -->
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
   <div class="form-message">
-      <label> <input name="fields[id]" type="text" placeholder= "昵称"></label>
+      <label> <input name="fields[id]" type="text" placeholder= "昵称" required="required"></label>
       <label> <input name="fields[contact]" type="email" placeholder= "联系方式（email, QQ, ...）"></label>
 
   <label>
-      <textarea name="fields[message]" placeholder= "建议……"></textarea>
+      <textarea name="fields[message]" placeholder= "建议……" required="required"></textarea>
   </label>
     <button type="submit" class="issues-submit">提交</button>
 </div>
