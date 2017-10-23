@@ -1,5 +1,5 @@
 ---
-layout: code
+layout: page
 ---
 
 {% include issue-form.html %}
