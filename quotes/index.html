@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<div class="blog">
+    <!-- <h1>reading</h1> -->
+    {% for item in site.data.quotes %}
+        <blockquote>
+          {{ item.quote | markdownify }}
+        </blockquote>
+        <p>—— {{ item.source }}</p>
+    {% endfor %}
+</div>

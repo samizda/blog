@@ -11,7 +11,7 @@ url: http://idelem.herokuapp.com/
 # File management
 
 gems: ['kramdown']
-include: [".htaccess", "_clips"]
+include: [".htaccess", "_read"]
 exclude: ["README.md", "LICENSE", 'config.ru', 'Gemfile', 'Gemfile.lock', "vendor", "bin", "Procfile","todo"]
 
 
@@ -31,13 +31,16 @@ highlighter: rouge
 
 # Rake
 post:
-  template: _post.txt
+  template: templates/_post.txt
   extension: md
 page:
-  template: _page.txt
+  template: templates/_page.txt
   extension: md
 code:
-  template: _code.txt
+  template: templates/_code.txt
+  extension: md
+read:
+  template: templates/_read.txt
   extension: md
 editor: gvim
 git:
@@ -53,3 +56,6 @@ collections:
   clips:
     output: true
     permalink: /clips/:title
+  read:
+    output: true
+    permalink: /read/:title

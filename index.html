@@ -40,6 +40,20 @@ layout: default
         {% endfor %}
     </ul>
 </div>
+
+<div class="blog">
+    <h1>reading</h1>
+    <ul>
+        {% for read in site.read %}
+        <li>
+            <!-- <span class="date">{{ post.date | date: '%Y %b %d' }}</span> -  -->
+            {{ read.title }}
+            <hr>
+            <p>{{ read.content | markdownify }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 <!--
 <div class="blog">
     <h1>Codex:</h1>

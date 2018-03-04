@@ -1,6 +1,9 @@
 # - title: forum (BETA)
 #   url: /forum
 
+- title: quotes
+  url: /quotes
+
 - title: atelier
   url: /atelier
 

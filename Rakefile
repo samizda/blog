@@ -14,6 +14,7 @@ task :default => :watch
 CONFIG = YAML.load_file("_config.yml")
 
 # Get and parse the date
+MON = Time.now.strftime("%Y-%b")
 DATE = Time.now.strftime("%Y-%m-%d")
 TIME = Time.now.strftime("%H:%M:%S")
 POST_TIME = DATE + ' ' + TIME
@@ -21,7 +22,8 @@ POST_TIME = DATE + ' ' + TIME
 # Directories
 POSTS = "_posts"
 DRAFTS = "_drafts"
-CLIPS = "_clips"
+READ = "_read"
+# CLIPS = "_clips"
 
 # == Helpers ===================================================================
 
@@ -95,6 +97,19 @@ task :post, :title do |t, args|
   filename = "#{DATE}-#{transform_to_slug(title, extension)}"
   content = read_file(template)
   create_file(POSTS, filename, content, title, editor)
+end
+
+# rake read
+desc "Create a read in _read"
+task :read do |t, args|
+  title = "#{MON}"
+  template = CONFIG["read"]["template"]
+  extension = CONFIG["read"]["extension"]
+  editor = CONFIG["editor"]
+  check_title(title)
+  filename = "#{MON}"
+  content = read_file(template)
+  create_file(READ, filename, content, title, editor)
 end
 
 # rake code["Title"]
