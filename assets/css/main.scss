@@ -214,6 +214,7 @@ blockquote {
 				padding: 3px;
                 line-height: 150%;
 				padding-left: 5px;
+                // list-style: circle;
 				@media screen and (max-width: $br) {
 					// padding: 10px 0 10px 0;
 				}
@@ -222,6 +223,9 @@ blockquote {
 				margin-left: 10px;
 			}
 		}
+        li {
+            list-style: circle;
+        }
 		img {
 			margin-top: 10px;
 			margin-bottom: 10px;
@@ -278,4 +282,38 @@ blockquote {
 			margin-bottom: 10px;
 		}
 	}
+}
+
+#comment {
+    margin-top: 4em;
+}
+.v * {
+    font-size: 0.8em !important;
+}
+.v .vinput {
+    line-height: normal !important;
+    padding: 0 0;
+}
+.v .veditor {
+    min-height: 4rem !important;
+}
+.v .vbtn {
+    border-radius: 1.5em !important;
+    padding: .25rem 1rem !important;
+}
+.v .vbtn:active, .v .vbtn:hover {
+    color: $color-link !important;
+    border-color: $color-link !important;
+}
+.v .vlist .vcard section .vfooter .vat {
+    color: $color-link !important;
+}
+.v .vlist .vcard .vhead .vsys {
+    visibility: hidden !important;
+}
+.v ul {
+    list-style: circle !important;
+}
+.v li {
+    list-style: hebrew !important;
 }
