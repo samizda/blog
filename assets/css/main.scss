@@ -4,14 +4,16 @@
 @import "reset";
 @import "config";
 @import url(http://fonts.googleapis.com/earlyaccess/notosanssc.css);
+@font-face{ font-family: 'Input Mono'; src : url('./input_mono_regular.ttf')};
 
 body {
 	color: $color-black;
 	background: $color-white;
 //  font-family: 'Noto Sans SC', sans-serif;
 //	font-family: 'Inconsolata', ;
-    font-family: monospace;
-	font-size: 100%;
+    // font-family: monospace;
+    font-family: 'Input Mono','Noto Sans SC';
+	font-size: 0.8em;
 	font-weight: 400;
 }
 h1 {
@@ -22,6 +24,11 @@ h2 {
     font-weight: 700;
     margin-top: 25px;
     margin-bottom: 5px;
+}
+hr {
+    color: #ccc;
+    height: 2px;
+    border: none;
 }
 p {
 	font-size: 1em;
@@ -85,8 +92,9 @@ blockquote {
 		display: block;
 	}
 	h1 {
-		font-size: 2em;
+		font-size: 1em;
 		margin-bottom: 0;
+        text-transform: uppercase;
 	}
 	ul {
 		margin-top: 10px;
@@ -96,6 +104,7 @@ blockquote {
 			padding-left: 5px;
             padding: 3px;
             line-height: 150%;
+            // text-transform: uppercase;
 		}
 	}
 }
@@ -103,15 +112,16 @@ blockquote {
 .blog {
 	padding-bottom: 30px;
 	h1 {
-		font-size: 1.4em;
-		margin-bottom: 5px;
+		font-size: 1em;
+		margin-bottom: 30px;
+        text-transform: uppercase;
 	}
 }
 
 .music {
 	padding-bottom: 30px;
 	h1 {
-		font-size: 1.4em;
+		font-size: 1em;
 		margin-bottom: 5px;
 	}
 	a {
@@ -133,18 +143,21 @@ blockquote {
 		margin-bottom: 6px;
 		h1 {
 			display: inline-block;
-			font-size: 1.6em;
+			font-size: 1em;
 			font-weight: 700;
 			padding-right: 10px;
+            margin-left: -1.5em;
 			padding-bottom: 2px;
 			text-decoration: none;
 			//border-bottom: 3px solid $color-black;
 		}
+        h1:before{content: '/ '}
+        h1:after{content: '.txt'}
 	}
 	&__date {
 		p {
 			font-size: 1em;
-			font-style: italic;
+			// font-style: italic;
 		}
 	}
 	&__meta {
@@ -155,17 +168,21 @@ blockquote {
 	&__content {
 		padding-top: 40px;
 		h1 {
-			font-size: 1.4em;
+            margin-left: -1.5em;
+			font-size: 1em;
 			font-weight: 700;
 			margin-top: 50px;
-			margin-bottom: 20px;
-		}
-		h2 {
-			font-size: 1.1em;
-			font-weight: 700;
-			margin-top: 25px;
 			margin-bottom: 10px;
 		}
+        h1:before{content: '# '}
+		h2 {
+            margin-left: -2em;
+			font-size: 1em;
+			font-weight: 400;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+        h2:before{content: '## '}
 		p {
 			font-size: 1em;
 			line-height: 150%;
