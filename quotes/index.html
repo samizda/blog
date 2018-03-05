@@ -3,25 +3,28 @@ layout: default
 ---
 <div class="blog">
     <!-- <h1>reading</h1> -->
+
+    <!-- <div id="comment">
+        <script>
+        new Valine({
+            el:'#comment',
+            notify:false,
+            verify:false,
+            appId:'lK3lSUw2tJIgu3zWmaUGg7aI-gzGzoHsz',
+            appKey:'v3pggB3HAPE4XcdkSbiyMyte',
+            path:window.location.pathname,
+            guest_info:['nick'],
+            avatar:'hide',
+            placeholder:'Voilà. '
+        })
+        </script>
+    </div> -->
+
     {% for item in site.data.quotes %}
         <blockquote>
           {{ item.quote | markdownify }}
         </blockquote>
         <p>—— {{ item.source }}</p>
     {% endfor %}
-</div>
-<div id="comment">
-    <script>
-    new Valine({
-        el:'#comment',
-        notify:false,
-        verify:false,
-        appId:'lK3lSUw2tJIgu3zWmaUGg7aI-gzGzoHsz',
-        appKey:'v3pggB3HAPE4XcdkSbiyMyte',
-        path:window.location.pathname,
-        guest_info:['nick'],
-        avatar:'hide'
-        placeholder:'Voilà. '
-    })
-    </script>
+
 </div>
