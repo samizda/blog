@@ -3,4 +3,6 @@
 - 目前项目一览：
 - Bella Ciao
 - I am cured all right!
+- 不知名的神秘游戏
+- It was raining gold
 - ——— 2018.3
