@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 1. MULTIVIEW + LAUNCHBAR:
 	- 设计不同工作场合下的列表组合，用标签统一管理。
@@ -20,4 +20,3 @@ published: false
 	- GITHUB ISSUES: 社交，协作
 	- NOTION: 多媒体，排版，TASTY MARKDOWN
 	- BLOG: 掌握全部个人数据
-
