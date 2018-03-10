@@ -204,6 +204,14 @@ blockquote {
 		em {
 			font-style: italic;
 		}
+        strike {
+            text-decoration: line-through;
+        }
+        li {
+            // list-style: circle;
+            list-style: decimal;
+            margin-bottom: 15px;
+        }
 		ul {
 			font-size: 1em;
 			list-style: circle;
@@ -223,11 +231,6 @@ blockquote {
 				margin-left: 10px;
 			}
 		}
-        li {
-            // list-style: circle;
-            list-style: decimal;
-            margin-bottom: 15px;
-        }
 		img {
 			margin-top: 10px;
 			margin-bottom: 10px;
