@@ -204,17 +204,15 @@ blockquote {
 		em {
 			font-style: italic;
 		}
-        strike {
-            text-decoration: line-through;
-        }
-        li {
-            // list-style: circle;
+        ol {
             list-style: decimal;
-            margin-bottom: 15px;
+            @media screen and (max-width: $br) {
+                margin-left: 10px;
+            }
         }
 		ul {
 			font-size: 1em;
-			list-style: circle;
+			list-style: circle outside;
 			margin-left: 30px;
 			// margin-top: -10px;
 			margin-bottom: 15px;
@@ -222,7 +220,6 @@ blockquote {
 				padding: 3px;
                 line-height: 150%;
 				padding-left: 5px;
-                list-style: decimal;
 				@media screen and (max-width: $br) {
 					// padding: 10px 0 10px 0;
 				}
@@ -231,6 +228,13 @@ blockquote {
 				margin-left: 10px;
 			}
 		}
+        // li {
+        //     // list-style: circle;
+        //     list-style: decimal outside;
+        //     @media screen and (max-width: $br) {
+        //         margin-left: 10px;
+        //     }
+        // }
 		img {
 			margin-top: 10px;
 			margin-bottom: 10px;
