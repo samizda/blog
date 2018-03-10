@@ -208,13 +208,13 @@ blockquote {
 			font-size: 1em;
 			list-style: circle;
 			margin-left: 30px;
-			margin-top: -10px;
+			// margin-top: -10px;
 			margin-bottom: 15px;
 			li {
 				padding: 3px;
                 line-height: 150%;
 				padding-left: 5px;
-                // list-style: circle;
+                list-style: decimal;
 				@media screen and (max-width: $br) {
 					// padding: 10px 0 10px 0;
 				}
@@ -224,7 +224,8 @@ blockquote {
 			}
 		}
         li {
-            list-style: circle;
+            // list-style: circle;
+            list-style: decimal;
         }
 		img {
 			margin-top: 10px;
