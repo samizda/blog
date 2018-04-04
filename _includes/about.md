@@ -1,9 +1,4 @@
+- Cool memories. 
 - 一边写小说，一边写码。
-- 读书笔记，项目进展。
-- 目前项目一览：
-- Bella Ciao
-- I am cured all right!
-- (不知名的神秘游戏)
-- It was raining gold
-- refactoring some css/js
-- ——— 2018.3
+- 读书笔记，项目进展，我的 org-mode。
+- ——— 2018.4
