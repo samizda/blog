@@ -4,7 +4,6 @@ title: Down to a Sunless Merge
 ---
 
 > Through ~~caverns~~ commits measureless to man. 
->
 > Down to a sunless ~~sea~~ merge. 
 
 深陷于一个地狱般的 merge。大概就是落后 master 70+ commits 的同时，我自己又有 ~9 commits。这里说说从地狱里爬出来的艰险路途上积累的一点人生经验。
